@@ -1,0 +1,64 @@
+/*==========Base==========*/
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 1rem;
+}
+body {
+    color: $dark-color;
+    background: $bg-color;
+
+    &::-webkit-scrollbar {
+        width: .4rem;
+      }
+    &::-webkit-scrollbar-track {
+        background: $bg-color;
+      }
+    &::-webkit-scrollbar-thumb {
+        background: $blue-color;
+      }
+}
+.section {
+    padding: 3rem 0;
+}
+.container {
+    padding: 0 2rem 0 4rem;
+    margin: 0 auto;
+}
+.flex {
+    display: flex;
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+h1, h2, h3, h4 {
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+p, a, span, small {
+    font-size: 1rem;
+    font-weight: 300;
+}
+  
+  
+/*==========Media Query==========*/
+@media (max-width: 1024px) {
+    html {
+        scroll-padding-top: 4.5rem;
+    }
+    .section {
+        padding: 1rem 0;
+    }
+    .container {
+        padding: 0 .2rem;
+        margin: 0 auto;
+    }
+    h1, h2, h3, h4 {
+        font-size: 1.1rem;
+    }
+    p, a, span, small {
+        font-size: .9rem;
+    }
+    
+}
+  

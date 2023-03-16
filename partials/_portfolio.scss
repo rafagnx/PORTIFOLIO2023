@@ -1,0 +1,159 @@
+.portfolio {
+
+    .container {
+
+        .portfolio__container {
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+
+            .portfolio-text {
+                margin-block-start: 5rem;
+                text-align: center;
+                
+                h2 {
+                    font-size: 1.5rem;
+                    font-weight: 500;
+                    text-transform: capitalize;
+                    color: $blue-color;
+                    margin-block-end: .5rem;
+                }
+            }
+
+            .languages {
+                width: 100%;
+                height: 100%;
+                align-items: center;
+                justify-content: center;
+                margin-block-start: -5rem;
+
+                .wrapper {
+                    align-items: center;
+                    justify-content: center;
+                    gap: 1rem;
+
+                    .box {
+                        margin: 3rem;
+
+                        .box-container {
+                            width: 150px;
+                            height: 150px;
+                            perspective: 1200px;
+
+                            .box-content {
+                                position: relative;
+                                width: 100%;
+                                height: 100%;
+                                transform-style: preserve-3d;
+                                transform: translateZ(-75px) rotateY(-20deg);
+                                transition: all 1s ease;
+
+                                .slider {
+                                    position: absolute;
+                                    width: 150px;
+                                    height: 150px;
+                                    text-align: center;
+                                    padding: 1rem;
+                                    background: $dark-color;
+                                    box-shadow: $shadow;
+                                    display: flex;
+                                    align-items: center;
+                                    justify-content: center;
+
+                                    h4 {
+                                        font-size: 4rem;
+                                        color: $blue-color;
+                                    }
+
+                                    .content {
+                                        display: flex;
+                                        align-items: center;
+                                        justify-content: center;
+                                        height: 100%;
+                                        height: 100%;
+
+                                        img {
+                                            object-fit: cover;
+                                            width: 100%;
+                                            height: 100%;
+                                        }
+                                    }
+                                }
+
+                                .slide-1 {
+                                    transform: rotateY(0deg) translateZ(75px);
+                                    z-index: 9;
+                                }
+
+                                .slide-2 {
+                                    color: $white-color;
+                                    background: $dark-color;
+                                    transform: rotateY(90deg) translateZ(75px);
+                                }
+                            }
+
+                            &:hover {
+
+                                .box-content {
+                                    transform: translateZ(-75px) rotateY(-90deg);
+                                }
+                            }
+                        }
+
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+/*==========Media Query==========*/
+@media (max-width: 1024px) {
+    .portfolio {
+
+        .container {
+    
+            .portfolio__container {
+    
+                .portfolio-text {
+                    margin-block-start: 1rem;
+                    
+                    h2 {
+                        font-size: 1.2rem;
+                    }
+                }
+    
+                .languages {
+                    margin-block-start: -1rem;
+    
+                    .wrapper {
+                        flex-direction: column;
+    
+                        .box {
+                            margin: 1rem;
+    
+                            .box-container {
+                                width: 120px;
+                                height: 120px;
+
+                                .box-content {
+                                    transform: translateZ(-75px) rotateY(-45deg);
+
+                                    .slider {
+    
+                                        h4 {
+                                            font-size: 3rem;
+                                        }
+                                    }
+                                }
+                            }
+    
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+}
