@@ -30,7 +30,7 @@ Projeto construido para demonstração de portifólio.
 Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 - HTML e CSS 
-- SASS
+- SCSS
 - JavaScript e JSON
 - [Node e NPM](https://nodejs.org/)
 - [Vite](https://vitejs.dev/)
