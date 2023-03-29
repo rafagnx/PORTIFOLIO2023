@@ -29,9 +29,11 @@ Projeto construido para demonstração de portifólio.
 
 Esse projeto foi desenvolvido com as seguintes tecnologias:
 
-- HTML e CSS 
-- SCSS
-- JavaScript e JSON
+- [HTML] 
+- [CSS]
+- [SCSS]
+- [JavaScript]
+- [JSON]
 - [Node e NPM](https://nodejs.org/)
 - [Vite](https://vitejs.dev/)
 - [iMask](https://imask.js.org)
